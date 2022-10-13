@@ -17,7 +17,7 @@ targets:
       - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/imlib2-devel-1.4.10-1.28.x86_64.rpm
       - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/imlib2-filters-1.4.10-1.28.x86_64.rpm
       - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/imlib2-loaders-1.4.10-1.28.x86_64.rpm
-      - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/libid3tag-devel-0.15.1b-3.14.x86_64.rpm
+      - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/libid3tag0-0.15.1b-3.14.x86_64.rpm
       - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/libmariadb-devel-3.1.13-3.30.1.x86_64.rpm
       - shared-mime-info
 before:
