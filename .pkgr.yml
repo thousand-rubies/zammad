@@ -12,8 +12,11 @@ targets:
       - libImlib2-1
       - imlib2
     build_dependencies:
-      - libImlib2-1
+      - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/libImlib2-1-1.4.10-1.28.x86_64.rpm
+      - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/imlib2-1.4.10-1.28.x86_64.rpm
       - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/imlib2-devel-1.4.10-1.28.x86_64.rpm
+      - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/imlib2-filters-1.4.10-1.28.x86_64.rpm
+      - https://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-stable/repo/oss/x86_64/imlib2-loaders-1.4.10-1.28.x86_64.rpm
       - shared-mime-info
 before:
   - contrib/packager.io/before.sh
