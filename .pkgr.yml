@@ -131,6 +131,18 @@ targets:
       - https://ftp.gwdg.de/pub/opensuse/discontinued/distribution/12.3/repo/oss/suse/x86_64/imlib2-filters-1.4.5-12.1.1.x86_64.rpm
       - https://ftp.gwdg.de/pub/opensuse/discontinued/distribution/12.3/repo/oss/suse/x86_64/libImlib2-1-1.4.5-12.1.1.x86_64.rpm
       - shared-mime-info
+  sles-15:
+    dependencies:
+      - curl
+      - elasticsearch
+      - nginx
+      - postgresql-server
+      - libImlib2-1
+      - imlib2
+    build_dependencies:
+      - libimlib2
+      - libimlib2-dev
+      - shared-mime-info
 before:
   - contrib/packager.io/before.sh
 after:
