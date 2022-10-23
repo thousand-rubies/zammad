@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 6.1.7'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -90,12 +90,12 @@ gem 'omniauth-rails_csrf_protection'
 
 # authentication - third party providers
 gem 'omniauth-facebook'
-gem 'omniauth-github'
-gem 'omniauth-gitlab'
+gem 'omniauth-github', '>= 2.0.0'
+gem 'omniauth-gitlab', '>= 3.0.0'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-microsoft-office365'
-gem 'omniauth-saml'
+gem 'omniauth-saml', '>= 2.0.0'
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
