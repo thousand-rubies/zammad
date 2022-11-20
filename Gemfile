@@ -54,7 +54,7 @@ gem 'graphql-batch', require: 'graphql/batch'
 gem 'rszr'
 
 # performance - Memcached
-gem 'dalli', require: false
+gem 'dalli', '>= 3.2.3', require: false
 
 # Vite is required by the web server
 gem 'vite_rails'
