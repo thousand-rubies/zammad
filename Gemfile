@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 6.1.7'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -75,7 +75,7 @@ group :assets do
   gem 'sassc-rails', require: false
 
   # asset handling - pipeline
-  gem 'sprockets', '~> 3.7.2', require: false
+  gem 'sprockets', '~> 4.2.0', require: false
   gem 'terser', require: false
 
   gem 'autoprefixer-rails', require: false
