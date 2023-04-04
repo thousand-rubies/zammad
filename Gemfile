@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -54,7 +54,7 @@ gem 'graphql-batch', require: 'graphql/batch'
 gem 'rszr'
 
 # performance - Memcached
-gem 'dalli', require: false
+gem 'dalli', '>= 3.2.3', require: false
 
 # Vite is required by the web server
 gem 'vite_rails'
@@ -75,7 +75,7 @@ group :assets do
   gem 'sassc-rails', require: false
 
   # asset handling - pipeline
-  gem 'sprockets', '~> 3.7.2', require: false
+  gem 'sprockets', '~> 4.2.0', require: false
   gem 'terser', require: false
 
   gem 'autoprefixer-rails', require: false
@@ -90,12 +90,12 @@ gem 'omniauth-rails_csrf_protection'
 
 # authentication - third party providers
 gem 'omniauth-facebook'
-gem 'omniauth-github'
-gem 'omniauth-gitlab'
+gem 'omniauth-github', '>= 2.0.0'
+gem 'omniauth-gitlab', '>= 3.0.0'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-microsoft-office365'
-gem 'omniauth-saml'
+gem 'omniauth-saml', '>= 2.0.0'
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
