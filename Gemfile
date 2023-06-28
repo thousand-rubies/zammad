@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.4'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -57,7 +57,7 @@ gem 'rszr'
 gem 'dalli', require: false
 
 # Vite is required by the web server
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.13'
 
 # Only load gems for asset compilation if they are needed to avoid
 #   having unneeded runtime dependencies like NodeJS.
@@ -82,11 +82,11 @@ group :assets do
 end
 
 # authentication - provider
-gem 'doorkeeper'
+gem 'doorkeeper', '>= 5.6.1'
 gem 'oauth2'
 
 # authentication - third party
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth-rails_csrf_protection', '>= 1.0.0'
 
 # authentication - third party providers
 gem 'omniauth-facebook'
@@ -181,13 +181,13 @@ group :development, :test do
   # test frameworks
   gem 'minitest-profile', require: false
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.2'
   gem 'rspec-retry'
   gem 'shoulda-matchers'
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 1.8.1'
 
   # UI tests w/ Selenium
   gem 'capybara'
