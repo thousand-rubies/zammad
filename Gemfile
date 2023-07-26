@@ -100,7 +100,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
 # Rate limiting
-gem 'rack-attack'
+gem 'rack-attack', '>= 6.7.0'
 
 # channels
 gem 'gmail_xoauth'
