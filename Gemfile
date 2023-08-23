@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.5'
 
 # core - rails additions
-gem 'activerecord-import'
+gem 'activerecord-import', '>= 1.5.0'
 gem 'activerecord-session_store'
 gem 'bootsnap', require: false
-gem 'composite_primary_keys'
+gem 'composite_primary_keys', '>= 13.0.4'
 gem 'json'
 
 # core - application servers
@@ -18,7 +18,7 @@ gem 'puma', '~> 4', group: :puma
 gem 'unicorn', group: :unicorn
 
 # core - supported ORMs
-gem 'activerecord-nulldb-adapter', group: :nulldb
+gem 'activerecord-nulldb-adapter', '>= 0.9.0', group: :nulldb
 gem 'mysql2', group: :mysql
 gem 'pg', '~> 1.2.0', group: :postgres
 
@@ -44,7 +44,7 @@ gem 'argon2'
 gem 'aasm'
 
 # core - authorization
-gem 'pundit'
+gem 'pundit', '>= 2.3.0'
 
 # core - graphql handling
 gem 'graphql'
@@ -57,7 +57,7 @@ gem 'rszr'
 gem 'dalli', require: false
 
 # Vite is required by the web server
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.13'
 
 # Only load gems for asset compilation if they are needed to avoid
 #   having unneeded runtime dependencies like NodeJS.
@@ -82,11 +82,11 @@ group :assets do
 end
 
 # authentication - provider
-gem 'doorkeeper'
+gem 'doorkeeper', '>= 5.6.1'
 gem 'oauth2'
 
 # authentication - third party
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth-rails_csrf_protection', '>= 1.0.0'
 
 # authentication - third party providers
 gem 'omniauth-facebook'
@@ -146,7 +146,7 @@ gem 'messagebird-rest'
 gem 'twilio-ruby', require: false
 
 # feature - ordering
-gem 'acts_as_list'
+gem 'acts_as_list', '>= 1.1.0'
 
 # integrations
 gem 'clearbit', require: false
@@ -181,13 +181,13 @@ group :development, :test do
   # test frameworks
   gem 'minitest-profile', require: false
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.2'
   gem 'rspec-retry'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 5.3.0'
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 1.8.1'
 
   # UI tests w/ Selenium
   gem 'capybara'
@@ -201,7 +201,7 @@ group :development, :test do
   gem 'rubocop-graphql'
   gem 'rubocop-inflector'
   gem 'rubocop-performance'
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', '>= 2.17.0'
   gem 'rubocop-rspec'
 
   # generate random test data
@@ -216,7 +216,7 @@ group :development, :test do
   gem 'vcr', require: false
 
   # handle deprecations in core and addons
-  gem 'deprecation_toolkit'
+  gem 'deprecation_toolkit', '>= 2.0.1'
 
   # image comparison in tests
   gem 'chunky_png'
