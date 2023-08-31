@@ -8,7 +8,7 @@ gem 'rails', '~> 6.1.0'
 
 # core - rails additions
 gem 'activerecord-import'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 2.1.0'
 gem 'bootsnap', require: false
 gem 'composite_primary_keys'
 gem 'json'
