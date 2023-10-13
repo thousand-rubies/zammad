@@ -24,7 +24,7 @@ gem 'pg', '~> 1.2.0', group: :postgres
 
 # core - asynchrous task execution
 gem 'daemons'
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.8'
 
 # core - command line interface
 gem 'thor'
