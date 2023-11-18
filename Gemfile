@@ -205,7 +205,7 @@ group :development, :test do
   gem 'rubocop-rspec'
 
   # generate random test data
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.3.0'
   gem 'faker'
 
   # mock http calls
