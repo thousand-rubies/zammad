@@ -4,11 +4,11 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 7.0.8', '>= 7.0.8.1'
 
 # core - rails additions
 gem 'activerecord-import'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 2.1.0'
 gem 'bootsnap', require: false
 gem 'composite_primary_keys'
 gem 'json'
@@ -57,7 +57,7 @@ gem 'rszr'
 gem 'dalli', require: false
 
 # Vite is required by the web server
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.13'
 
 # Only load gems for asset compilation if they are needed to avoid
 #   having unneeded runtime dependencies like NodeJS.
@@ -75,32 +75,32 @@ group :assets do
   gem 'sassc-rails', require: false
 
   # asset handling - pipeline
-  gem 'sprockets', '~> 3.7.2', require: false
+  gem 'sprockets', '~> 3.7.3', require: false
   gem 'terser', require: false
 
   gem 'autoprefixer-rails', require: false
 end
 
 # authentication - provider
-gem 'doorkeeper'
+gem 'doorkeeper', '>= 5.6.1'
 gem 'oauth2'
 
 # authentication - third party
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth-rails_csrf_protection', '>= 1.0.0'
 
 # authentication - third party providers
 gem 'omniauth-facebook'
-gem 'omniauth-github'
-gem 'omniauth-gitlab'
-gem 'omniauth-google-oauth2'
-gem 'omniauth-linkedin-oauth2'
+gem 'omniauth-github', '>= 2.0.0'
+gem 'omniauth-gitlab', '>= 3.0.0'
+gem 'omniauth-google-oauth2', '>= 0.8.1'
+gem 'omniauth-linkedin-oauth2', '>= 1.0.1'
 gem 'omniauth-microsoft-office365'
-gem 'omniauth-saml'
+gem 'omniauth-saml', '>= 2.0.0'
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
 # Rate limiting
-gem 'rack-attack'
+gem 'rack-attack', '>= 6.7.0'
 
 # channels
 gem 'gmail_xoauth'
@@ -143,7 +143,7 @@ gem 'telephone_number'
 
 # feature - SMS
 gem 'messagebird-rest'
-gem 'twilio-ruby', require: false
+gem 'twilio-ruby', '>= 5.73.0', require: false
 
 # feature - ordering
 gem 'acts_as_list'
@@ -181,16 +181,16 @@ group :development, :test do
   # test frameworks
   gem 'minitest-profile', require: false
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.2'
   gem 'rspec-retry'
   gem 'shoulda-matchers'
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 1.8.1'
 
   # UI tests w/ Selenium
-  gem 'capybara'
+  gem 'capybara', '>= 3.38.0'
   gem 'selenium-webdriver'
 
   # code QA
@@ -201,11 +201,11 @@ group :development, :test do
   gem 'rubocop-graphql'
   gem 'rubocop-inflector'
   gem 'rubocop-performance'
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', '>= 2.17.0'
   gem 'rubocop-rspec'
 
   # generate random test data
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.3.0'
   gem 'faker'
 
   # mock http calls
