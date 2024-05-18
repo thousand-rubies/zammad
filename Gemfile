@@ -95,7 +95,7 @@ gem 'omniauth-gitlab'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-microsoft-office365'
-gem 'omniauth-saml'
+gem 'omniauth-saml', '>= 2.0.0'
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
@@ -104,7 +104,7 @@ gem 'rack-attack'
 
 # channels
 gem 'gmail_xoauth'
-gem 'koala'
+gem 'koala', '>= 3.4.0'
 gem 'telegram-bot-ruby'
 gem 'twitter'
 
@@ -191,25 +191,25 @@ group :development, :test do
 
   # UI tests w/ Selenium
   gem 'capybara'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 4.6.0'
 
   # code QA
   gem 'brakeman', require: false
-  gem 'overcommit'
-  gem 'rubocop'
+  gem 'overcommit', '>= 0.60.0'
+  gem 'rubocop', '>= 1.37.0'
   gem 'rubocop-faker'
-  gem 'rubocop-graphql'
+  gem 'rubocop-graphql', '>= 0.16.0'
   gem 'rubocop-inflector'
-  gem 'rubocop-performance'
-  gem 'rubocop-rails'
-  gem 'rubocop-rspec'
+  gem 'rubocop-performance', '>= 1.15.1'
+  gem 'rubocop-rails', '>= 2.17.0'
+  gem 'rubocop-rspec', '>= 2.14.0'
 
   # generate random test data
   gem 'factory_bot_rails'
   gem 'faker'
 
   # mock http calls
-  gem 'webmock'
+  gem 'webmock', '>= 3.19.0'
 
   # record and replay TCP/HTTP transactions
   gem 'tcr', require: false
