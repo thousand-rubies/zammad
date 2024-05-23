@@ -89,7 +89,7 @@ gem 'oauth2'
 gem 'omniauth-rails_csrf_protection'
 
 # authentication - third party providers
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '>= 10.0.0'
 gem 'omniauth-github'
 gem 'omniauth-gitlab'
 gem 'omniauth-google-oauth2'
