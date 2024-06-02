@@ -190,7 +190,7 @@ group :development, :test do
   gem 'pundit-matchers'
 
   # UI tests w/ Selenium
-  gem 'capybara'
+  gem 'capybara', '>= 3.38.0'
   gem 'selenium-webdriver'
 
   # code QA
