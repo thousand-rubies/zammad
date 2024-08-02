@@ -104,7 +104,7 @@ gem 'rack-attack'
 
 # channels
 gem 'gmail_xoauth'
-gem 'koala'
+gem 'koala', '>= 3.4.0'
 gem 'telegram-bot-ruby'
 gem 'twitter'
 
