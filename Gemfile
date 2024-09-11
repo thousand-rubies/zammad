@@ -95,7 +95,7 @@ gem 'omniauth-gitlab'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-microsoft-office365'
-gem 'omniauth-saml'
+gem 'omniauth-saml', '>= 2.1.1'
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
