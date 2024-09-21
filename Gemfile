@@ -14,7 +14,7 @@ gem 'composite_primary_keys'
 gem 'json'
 
 # core - application servers
-gem 'puma', '~> 4', group: :puma
+gem 'puma', '~> 5', '>= 5.6.9', group: :puma
 gem 'unicorn', group: :unicorn
 
 # core - supported ORMs
