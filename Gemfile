@@ -195,8 +195,8 @@ group :development, :test do
 
   # code QA
   gem 'brakeman', require: false
-  gem 'overcommit'
-  gem 'rubocop'
+  gem 'overcommit', '>= 0.64.1'
+  gem 'rubocop', '>= 1.66.0'
   gem 'rubocop-faker'
   gem 'rubocop-graphql'
   gem 'rubocop-inflector'
