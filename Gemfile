@@ -159,7 +159,7 @@ gem 'autodiscover', git: 'https://github.com/zammad-deps/autodiscover', require:
 gem 'viewpoint', require: false
 
 # integrations - S/MIME
-gem 'openssl'
+gem 'openssl', '>= 3.3.0'
 
 # Translation sync
 gem 'PoParser', require: false
