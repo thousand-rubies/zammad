@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 7.0.0'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -47,7 +47,7 @@ gem 'aasm'
 gem 'pundit'
 
 # core - graphql handling
-gem 'graphql'
+gem 'graphql', '>= 2.0.32'
 gem 'graphql-batch', require: 'graphql/batch'
 
 # core - image processing
@@ -95,7 +95,7 @@ gem 'omniauth-gitlab'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-microsoft-office365'
-gem 'omniauth-saml'
+gem 'omniauth-saml', '>= 1.10.6'
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
@@ -187,7 +187,7 @@ group :development, :test do
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 3.0.0'
 
   # UI tests w/ Selenium
   gem 'capybara'
