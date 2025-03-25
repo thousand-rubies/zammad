@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 7.0.0'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -187,7 +187,7 @@ group :development, :test do
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 3.0.0'
 
   # UI tests w/ Selenium
   gem 'capybara'
@@ -198,7 +198,7 @@ group :development, :test do
   gem 'overcommit'
   gem 'rubocop'
   gem 'rubocop-faker'
-  gem 'rubocop-graphql'
+  gem 'rubocop-graphql', '>= 1.5.5'
   gem 'rubocop-inflector'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
