@@ -181,7 +181,7 @@ group :development, :test do
   # test frameworks
   gem 'minitest-profile', require: false
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'rspec-retry'
   gem 'shoulda-matchers'
   gem 'test-unit'
