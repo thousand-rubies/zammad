@@ -4,13 +4,13 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 7.1.0'
 
 # core - rails additions
-gem 'activerecord-import'
-gem 'activerecord-session_store'
+gem 'activerecord-import', '>= 1.5.0'
+gem 'activerecord-session_store', '>= 2.1.0'
 gem 'bootsnap', require: false
-gem 'composite_primary_keys'
+gem 'composite_primary_keys', '>= 13.0.4'
 gem 'json'
 
 # core - application servers
@@ -18,13 +18,13 @@ gem 'puma', '~> 4', group: :puma
 gem 'unicorn', group: :unicorn
 
 # core - supported ORMs
-gem 'activerecord-nulldb-adapter', group: :nulldb
+gem 'activerecord-nulldb-adapter', '>= 0.9.0', group: :nulldb
 gem 'mysql2', group: :mysql
 gem 'pg', '~> 1.2.0', group: :postgres
 
 # core - asynchrous task execution
 gem 'daemons'
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.8'
 
 # core - command line interface
 gem 'thor'
@@ -44,11 +44,11 @@ gem 'argon2'
 gem 'aasm'
 
 # core - authorization
-gem 'pundit'
+gem 'pundit', '>= 2.3.0'
 
 # core - graphql handling
 gem 'graphql'
-gem 'graphql-batch', require: 'graphql/batch'
+gem 'graphql-batch', '>= 0.5.2', require: 'graphql/batch'
 
 # core - image processing
 gem 'rszr'
@@ -57,7 +57,7 @@ gem 'rszr'
 gem 'dalli', require: false
 
 # Vite is required by the web server
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.13'
 
 # Only load gems for asset compilation if they are needed to avoid
 #   having unneeded runtime dependencies like NodeJS.
@@ -75,36 +75,36 @@ group :assets do
   gem 'sassc-rails', require: false
 
   # asset handling - pipeline
-  gem 'sprockets', '~> 3.7.2', require: false
+  gem 'sprockets', '~> 4.2.0', require: false
   gem 'terser', require: false
 
   gem 'autoprefixer-rails', require: false
 end
 
 # authentication - provider
-gem 'doorkeeper'
-gem 'oauth2'
+gem 'doorkeeper', '>= 5.6.1'
+gem 'oauth2', '>= 2.0.10'
 
 # authentication - third party
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth-rails_csrf_protection', '>= 1.0.0'
 
 # authentication - third party providers
-gem 'omniauth-facebook'
-gem 'omniauth-github'
-gem 'omniauth-gitlab'
-gem 'omniauth-google-oauth2'
-gem 'omniauth-linkedin-oauth2'
+gem 'omniauth-facebook', '>= 10.0.0'
+gem 'omniauth-github', '>= 2.0.0'
+gem 'omniauth-gitlab', '>= 3.0.0'
+gem 'omniauth-google-oauth2', '>= 0.8.1'
+gem 'omniauth-linkedin-oauth2', '>= 1.0.1'
 gem 'omniauth-microsoft-office365'
-gem 'omniauth-saml'
+gem 'omniauth-saml', '>= 2.0.0'
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 
 # Rate limiting
-gem 'rack-attack'
+gem 'rack-attack', '>= 6.7.0'
 
 # channels
 gem 'gmail_xoauth'
-gem 'koala'
+gem 'koala', '>= 3.4.0'
 gem 'telegram-bot-ruby'
 gem 'twitter'
 
@@ -143,10 +143,10 @@ gem 'telephone_number'
 
 # feature - SMS
 gem 'messagebird-rest'
-gem 'twilio-ruby', require: false
+gem 'twilio-ruby', '>= 5.73.0', require: false
 
 # feature - ordering
-gem 'acts_as_list'
+gem 'acts_as_list', '>= 1.1.0'
 
 # integrations
 gem 'clearbit', require: false
@@ -181,17 +181,17 @@ group :development, :test do
   # test frameworks
   gem 'minitest-profile', require: false
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.2'
   gem 'rspec-retry'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 5.3.0'
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
   gem 'pundit-matchers'
 
   # UI tests w/ Selenium
-  gem 'capybara'
-  gem 'selenium-webdriver'
+  gem 'capybara', '>= 3.38.0'
+  gem 'selenium-webdriver', '>= 4.6.0'
 
   # code QA
   gem 'brakeman', require: false
@@ -199,24 +199,24 @@ group :development, :test do
   gem 'rubocop'
   gem 'rubocop-faker'
   gem 'rubocop-graphql'
-  gem 'rubocop-inflector'
+  gem 'rubocop-inflector', '>= 1.0.0'
   gem 'rubocop-performance'
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', '>= 2.17.0'
   gem 'rubocop-rspec'
 
   # generate random test data
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.3.0'
   gem 'faker'
 
   # mock http calls
-  gem 'webmock'
+  gem 'webmock', '>= 3.19.0'
 
   # record and replay TCP/HTTP transactions
   gem 'tcr', require: false
   gem 'vcr', require: false
 
   # handle deprecations in core and addons
-  gem 'deprecation_toolkit'
+  gem 'deprecation_toolkit', '>= 2.0.1'
 
   # image comparison in tests
   gem 'chunky_png'
