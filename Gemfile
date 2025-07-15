@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 7.0.0'
 
 # core - rails additions
 gem 'activerecord-import'
@@ -97,7 +97,7 @@ gem 'omniauth-linkedin-oauth2'
 gem 'omniauth-microsoft-office365'
 gem 'omniauth-saml'
 gem 'omniauth-twitter'
-gem 'omniauth-weibo-oauth2'
+gem 'omniauth-weibo-oauth2', '>= 0.5.3'
 
 # Rate limiting
 gem 'rack-attack'
@@ -187,7 +187,7 @@ group :development, :test do
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 3.0.0'
 
   # UI tests w/ Selenium
   gem 'capybara'
