@@ -4,11 +4,11 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.1'
 
 # core - rails additions
 gem 'activerecord-import'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 2.1.0'
 gem 'bootsnap', require: false
 gem 'composite_primary_keys'
 gem 'json'
@@ -27,7 +27,7 @@ gem 'daemons'
 gem 'delayed_job_active_record'
 
 # core - command line interface
-gem 'thor'
+gem 'thor', '>= 1.4.0'
 
 # core - websocket
 gem 'em-websocket'
@@ -57,7 +57,7 @@ gem 'rszr'
 gem 'dalli', require: false
 
 # Vite is required by the web server
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.13'
 
 # Only load gems for asset compilation if they are needed to avoid
 #   having unneeded runtime dependencies like NodeJS.
@@ -82,7 +82,7 @@ group :assets do
 end
 
 # authentication - provider
-gem 'doorkeeper'
+gem 'doorkeeper', '>= 5.6.1'
 gem 'oauth2'
 
 # authentication - third party
@@ -181,13 +181,13 @@ group :development, :test do
   # test frameworks
   gem 'minitest-profile', require: false
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.2'
   gem 'rspec-retry'
   gem 'shoulda-matchers'
   gem 'test-unit'
 
   # for testing Pundit authorisation policies in RSpec
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 1.8.1'
 
   # UI tests w/ Selenium
   gem 'capybara'
@@ -205,7 +205,7 @@ group :development, :test do
   gem 'rubocop-rspec'
 
   # generate random test data
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.3.0'
   gem 'faker'
 
   # mock http calls
