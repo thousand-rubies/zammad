@@ -4,11 +4,11 @@ source 'https://rubygems.org'
 
 # core - base
 ruby '3.0.4'
-gem 'rails', '~> 6.1.0'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 
 # core - rails additions
-gem 'activerecord-import'
-gem 'activerecord-session_store'
+gem 'activerecord-import', '>= 1.5.0'
+gem 'activerecord-session_store', '>= 2.1.0'
 gem 'bootsnap', require: false
 gem 'composite_primary_keys'
 gem 'json'
@@ -18,13 +18,13 @@ gem 'puma', '~> 4', group: :puma
 gem 'unicorn', group: :unicorn
 
 # core - supported ORMs
-gem 'activerecord-nulldb-adapter', group: :nulldb
+gem 'activerecord-nulldb-adapter', '>= 1.0.0', group: :nulldb
 gem 'mysql2', group: :mysql
 gem 'pg', '~> 1.2.0', group: :postgres
 
 # core - asynchrous task execution
 gem 'daemons'
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.8'
 
 # core - command line interface
 gem 'thor'
@@ -146,7 +146,7 @@ gem 'messagebird-rest'
 gem 'twilio-ruby', require: false
 
 # feature - ordering
-gem 'acts_as_list'
+gem 'acts_as_list', '>= 1.1.0'
 
 # integrations
 gem 'clearbit', require: false
