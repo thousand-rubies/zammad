@@ -196,13 +196,13 @@ group :development, :test do
   # code QA
   gem 'brakeman', require: false
   gem 'overcommit'
-  gem 'rubocop'
-  gem 'rubocop-faker'
-  gem 'rubocop-graphql'
-  gem 'rubocop-inflector'
-  gem 'rubocop-performance'
-  gem 'rubocop-rails'
-  gem 'rubocop-rspec'
+  gem 'rubocop', '>= 1.66.0'
+  gem 'rubocop-faker', '>= 1.2.0'
+  gem 'rubocop-graphql', '>= 0.16.0'
+  gem 'rubocop-inflector', '>= 1.0.0'
+  gem 'rubocop-performance', '>= 1.15.1'
+  gem 'rubocop-rails', '>= 2.17.0'
+  gem 'rubocop-rspec', '>= 2.14.0'
 
   # generate random test data
   gem 'factory_bot_rails'
